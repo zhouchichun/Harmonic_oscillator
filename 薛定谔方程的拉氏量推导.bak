@@ -1,0 +1,160 @@
+%2multibyte Version: 5.50.0.2960 CodePage: 936
+\documentclass{article}%
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}%
+\setcounter{MaxMatrixCols}{30}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=5.50.0.2960}
+%TCIDATA{Codepage=936}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+%TCIDATA{Created=Wednesday, September 11, 2019 19:07:44}
+%TCIDATA{LastRevised=Friday, September 27, 2019 16:12:04}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%BeginMSIPreambleData
+\providecommand{\U}[1]{\protect\rule{.1in}{.1in}}
+%EndMSIPreambleData
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\begin{document}
+%
+\[
+L=\operatorname{Im}\left[  \psi^{\dagger}\left(  x,t\right)  \dot{\psi}\left(
+x,t\right)  \right]  -\frac{1}{2}\nabla\psi^{\dagger}\left(  x,t\right)
+\nabla\psi\left(  x,t\right)  +V\left(  x\right)  \psi^{\dagger}\left(
+x,t\right)  \psi\left(  x,t\right)
+\]
+令\[
+\psi\left(  x,t\right)  =u\left(  x,t\right)  +iv\left(  x,t\right)
+\]
+第一部分\begin{align*}
+\psi^{\dagger}\left(  x,t\right)  \dot{\psi}\left(  x,t\right)   &  =\left[
+u\left(  x,t\right)  -iv\left(  x,t\right)  \right]  \left[  \dot{u}\left(
+x,t\right)  +i\dot{v}\left(  x,t\right)  \right] \\
+&  =u\left(  x,t\right)  \dot{u}\left(  x,t\right)  +iu\left(  x,t\right)
+\dot{v}\left(  x,t\right)  -iv\left(  x,t\right)  \dot{u}\left(  x,t\right)
++v\left(  x,t\right)  \dot{v}\left(  x,t\right) \\
+&  =u\left(  x,t\right)  \dot{u}\left(  x,t\right)  +v\left(  x,t\right)
+\dot{v}\left(  x,t\right)  +i\left[  u\left(  x,t\right)  \dot{v}\left(
+x,t\right)  -v\left(  x,t\right)  \dot{u}\left(  x,t\right)  \right]
+\end{align*}
+第二部分\begin{align*}
+\nabla\psi^{\dagger}\left(  x,t\right)  \nabla\psi\left(  x,t\right)   &
+=\left[  u^{\prime}\left(  x,t\right)  -iv^{\prime}\left(  x,t\right)
+\right]  \left[  u^{\prime}\left(  x,t\right)  +iv^{\prime}\left(  x,t\right)
+\right] \\
+&  =u^{\prime2}\left(  x,t\right)  +v^{\prime2}\left(  x,t\right)
+\end{align*}
+第三部分\[
+\psi^{\dagger}\left(  x,t\right)  \psi\left(  x,t\right)  =u^{2}\left(
+x,t\right)  +v^{2}\left(  x,t\right)
+\]
+最后写为$u$和$v$的形式
+\begin{align*}
+L  &  =u\left(  x,t\right)  \dot{v}\left(  x,t\right)  -v\left(  x,t\right)
+\dot{u}\left(  x,t\right) \\
+&  -\frac{1}{2}u^{\prime2}\left(  x,t\right)  -\frac{1}{2}v^{\prime2}\left(
+x,t\right) \\
+&  +V\left(  x\right)  u^{2}\left(  x,t\right)  +V\left(  x\right)
+v^{2}\left(  x,t\right)
+\end{align*}
+
+
+作用量为\begin{align*}
+S  &  =\int dxdtL\\
+&  =\int dxdtu\left(  x,t\right)  \dot{u}\left(  x,t\right)  +\int
+dxdtv\left(  x,t\right)  \dot{v}\left(  x,t\right) \\
+&  -\frac{1}{2}\int dxdtu^{\prime2}\left(  x,t\right)  -\frac{1}{2}\int
+dxdtv^{\prime2}\left(  x,t\right) \\
+&  +\int dxdtV\left(  x\right)  u^{2}\left(  x,t\right)  +\int dxdtV\left(
+x\right)  v^{2}\left(  x,t\right)
+\end{align*}
+
+
+1%
+\[
+N\left(  x,t\right)  =\sum_{i}w_{i}^{f}\sigma\left(  w_{i}^{x}x+w_{i}%
+^{t}t+b_{i}\right)  +b^{f}%
+\]
+
+
+%
+
+\[
+\frac{dN}{dx}=\sum_{i}w_{i}^{f}w_{i}^{x}\sigma^{\prime}\left(  w_{i}%
+^{x}x+w_{i}^{t}t+b_{i}\right)
+\]%
+\[
+\frac{dN}{dt}=\sum_{i}w_{i}^{f}w_{i}^{t}\sigma^{\prime}\left(  w_{i}%
+^{x}x+w_{i}^{t}t+b_{i}\right)
+\]%
+\[
+f\left(  x,t\right)  =e^{-\beta x^{2}}e^{-\tau t^{2}}N\left(  x,t\right)
+\]
+%
+
+\begin{align*}
+\frac{df}{dx}  &  =-2\beta xe^{-\beta x^{2}}e^{-\tau t^{2}}N\left(
+x,t\right)  +e^{-\beta x^{2}}e^{-\tau t^{2}}\frac{d}{dx}N\left(  x,t\right) \\
+&  =-2\beta xe^{-\beta x^{2}}e^{-\tau t^{2}}\sum_{i}w_{i}^{f}\sigma\left(
+w_{i}^{x}x+w_{i}^{t}t+b_{i}\right)  +b^{f}\\
+&  +e^{-\beta x^{2}}e^{-\tau t^{2}}\sum_{i}w_{i}^{f}w_{i}^{x}\sigma^{\prime
+}\left(  w_{i}^{x}x+w_{i}^{t}t+b_{i}\right)
+\end{align*}
+
+
+哈密顿量
+
+给一个波函数，写成如下形式
+\[
+\psi\left(  x,t\right)  =u\left(  x,t\right)  +iv\left(  x,t\right)
+\]
+求能量是不是这样的\begin{align*}
+E &  =\int dxdt\psi^{\dagger}\left(  x,t\right)  i\hbar\dot{\psi}\left(
+x,t\right)  \\
+&  =\int dxdti\hbar\left[  u\left(  x,t\right)  -iv\left(  x,t\right)
+\right]  \left[  \dot{u}\left(  x,t\right)  +i\dot{v}\left(  x,t\right)
+\right]  \\
+&  =\int dxdti\hbar\left[  u\left(  x,t\right)  \dot{u}\left(  x,t\right)
++v\left(  x,t\right)  \dot{v}\left(  x,t\right)  +iu\left(  x,t\right)
+\dot{v}\left(  x,t\right)  -iv\left(  x,t\right)  \dot{u}\left(  x,t\right)
+\right]  \\
+&  =\int dxdt\hbar\left[  u\left(  x,t\right)  \dot{u}\left(  x,t\right)
++v\left(  x,t\right)  \dot{v}\left(  x,t\right)  \right]  i+\\
+&  \int dxdt\hbar\left[  v\left(  x,t\right)  \dot{u}\left(  x,t\right)
+-u\left(  x,t\right)  \dot{v}\left(  x,t\right)  \right]
+\end{align*}%
+\begin{align*}
+E\_i  & =\int dxdt\hbar\left[  u\left(  x,t\right)  \dot{u}\left(  x,t\right)
++v\left(  x,t\right)  \dot{v}\left(  x,t\right)  \right]  \\
+E\_r  & =\int dxdt\hbar\left[  v\left(  x,t\right)  \dot{u}\left(  x,t\right)
+-u\left(  x,t\right)  \dot{v}\left(  x,t\right)  \right]
+\end{align*}
+
+
+
+\end{document}
